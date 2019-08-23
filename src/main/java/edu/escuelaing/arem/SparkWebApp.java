@@ -7,6 +7,10 @@ package edu.escuelaing.arem;
 import static spark.Spark.*;
 
 public class SparkWebApp {
+	/**
+	 * Main donde se generara el html con el cual el servicio web va a trabajar
+	 * 
+	 */
 
 	public static void main(String[] args) {
 		port(getPort());
@@ -51,7 +55,7 @@ public class SparkWebApp {
 	}
 
 	/**
-	 * + media(req.queryParams("num")) Este metodo Calcula la desviacion estandar a
+	 *  Este metodo Calcula la desviacion estandar a
 	 * un conjunto de datos
 	 * 
 	 * @param LinkedList<float> Son los datos con los que podra calculará la
