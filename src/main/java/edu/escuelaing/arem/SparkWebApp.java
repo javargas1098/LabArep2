@@ -37,7 +37,7 @@ public class SparkWebApp {
 				"        Lista de números separados por espacio \r\n" + 
 				"      </h5>\r\n" + 
 				"	  <div class=\"form-check\">\r\n" + 
-				"    <input id=\"print\" class=\"col-xs-12 text-right calcs\" type=\"text\" name=\"input\" size=\"16\" style=\" margin-left: 10px;\">\r\n" + 
+				"    <input id=\"print\" class=\"col-xs-12 text-right calcs\" type=\"text\" name=\"num\" size=\"16\" style=\" margin-left: 10px;\">\r\n" + 
 				"  </div>\r\n" + 
 				"        \r\n" + 
 				"		<button type=\"submit\" class=\"btn btn-dark\" style=\"\r\n" + 
@@ -58,8 +58,8 @@ public class SparkWebApp {
 				"</html>");
 		get("/resp",
 				(req, res) -> "<!DOCTYPE html>\n" + "<html>\n" + "<body>\n" + "\n" + "<h2>Respuesta</h2>\n" + "\n"
-						+ "<form action=\"/index\">\n" + "  Media:<br>\n" + media(req.queryParams("numeros"))
-						+ "  <br>\n" + "  <br> Desviacion: <br>\n" + desviacion(req.queryParams("numeros"))
+						+ "<form action=\"/index\">\n" + "  Media:<br>\n" + media(req.queryParams("num"))
+						+ "  <br>\n" + "  <br> Desviacion: <br>\n" + desviacion(req.queryParams("num"))
 						+ "  <br><br>\n" + "  <input type=\"submit\" value=\"Volver\">\n" + "</form> \n" + "\n" + "\n"
 						+ "</body>\n" + "</html>" + "\n");
 	}
