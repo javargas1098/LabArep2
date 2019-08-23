@@ -2,8 +2,8 @@
 
 En este proyecto se realizo una calculadora la cual tenia como objetivo   calcular la media muestral y desviación estándar de un conjunto de datos.
 Para resolver este laboratorio se utilizaron estas formulas:
-![formula1](Fotos/Capture.png)
-![formula2](Fotos/Capture2.png)
+![formula1](Fotos/Capture.PNG)
+![formula2](Fotos/Capture2.PNG)
 
  
 ## Empezando
