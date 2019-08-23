@@ -22,14 +22,21 @@ public class SparkWebApp {
 				+ "        Calculadora de medias y desviaciones estandar\r\n" + "      </h1>\r\n" + "    </div>\r\n"
 				+ "    <div class=\"container\" id=\"calcs-section\">\r\n" + "      <div class=\"row\">\r\n"
 				+ "	  <h5 class=\"text-center\">\r\n" + "        Lista de números separados por espacio \r\n"
-				+ "      </h5>\r\n" + "	  <br>  \r\n"
-				+ "        <input id=\"print\" class=\"col-xs-12 text-right calcs\" type=\"text\" name=\"input\" size=\"16\" style=\" margin-left: 10px;>\r\n"
-				+ "	  </div>\r\n" + "	  <button type=\"button\" class=\"btn btn-primary\">submit</button>\r\n"
-				+ "    </div>\r\n" + "    </div>\r\n" + "  </div>\r\n"
+				+ "      </h5>\r\n" + "	  <div class=\"form-check\">\r\n"
+				+ "    <input id=\"print\" class=\"col-xs-12 text-right calcs\" type=\"text\" name=\"input\" size=\"16\" style=\" margin-left: 10px;\">\r\n"
+				+ "  </div>\r\n" + "        \r\n" + "		<button type=\"submit\" class=\"btn btn-dark\" style=\"\r\n"
+				+ "    margin-left: 10px;\r\n" + "    height: 32px;\r\n" + "    padding-top: 3px;\">Submit</button>\r\n"
+				+ "	  </div>\r\n" + "	  \r\n" + "    </div>\r\n" + "    </div>\r\n" + "  </div>\r\n"
 				+ "	<script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\r\n"
 				+ "    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>\r\n"
 				+ "    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>\r\n"
 				+ "  </body>\r\n" + "</html>\r\n" + "</html>");
+		get("/resp",
+				(req, res) -> "<!DOCTYPE html>\n" + "<html>\n" + "<body>\n" + "\n" + "<h2>Respuesta</h2>\n" + "\n"
+						+ "<form action=\"/index\">\n" + "  Media:<br>\n" + media(req.queryParams("numeros"))
+						+ "  <br>\n" + "  <br> Desviacion: <br>\n" + desviacion(req.queryParams("numeros"))
+						+ "  <br><br>\n" + "  <input type=\"submit\" value=\"Volver\">\n" + "</form> \n" + "\n" + "\n"
+						+ "</body>\n" + "</html>" + "\n");
 	}
 
 	/**
