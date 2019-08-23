@@ -23,7 +23,7 @@ La documentación se encuentra en la carpeta doc.
 
 ## Probando
 
-Para modificar el objeto de análisis, se debe modificar los datos ingreados en campo especificado.
+Para modificar el resultado de análisis,solo se debe modificar los datos ingreados en campo especificado.
 
 ## Autor
 
