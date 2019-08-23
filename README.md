@@ -7,7 +7,7 @@ Para resolver este laboratorio se utilizaron estas formulas:
 
  
 ## Empezando
-
+[I'm an inline-style link](https://www.google.com)
 Para ejecutar el programa debe ingresar al link [Heroku link Caculadora]([https://calm-fjord-26264.herokuapp.com/index](https://calm-fjord-26264.herokuapp.com/index) "Heroku Page") donde se debera ingresar la lista de numeros para poder hacer los calcuclos previstos(Media y Mesviacion Estantadar) estos datos se deben ingresar por espacion ej `3 4 5` de esta manera el programa se ejcutara y dara el resultado respectivo
 
 
