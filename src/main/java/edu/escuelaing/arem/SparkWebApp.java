@@ -39,11 +39,11 @@ public class SparkWebApp {
 				+ "    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\r\n"
 				+ "\r\n" + "    <title>Caculadora</title>\r\n" + "  </head>\r\n"
 				+ "  <body style='background-color:#dc3545;'>\r\n" + " <div class=\"container\">\r\n"
-				+ "	<h2>Respuesta</h2>\r\n" + "	<form action=\"index\">\r\n" + "		<h4>\r\n"
-				+ "			Media:  media(req.queryParams(\"num\")) 		\r\n" + "		</h4>\r\n"
-				+ "		<h5>\r\n" + "			Desviacion:  desviacion(req.queryParams(\"num\"))		\r\n"
-				+ "		</h4>\r\n" + "		<button type=\"submit\" class=\"btn btn-dark\">Volver</button>\r\n"
-				+ "	  </div>\r\n" + "	\r\n" + "	</form>\r\n" + "    \r\n" + "  </div>\r\n"
+				+ "	<h2>Respuesta</h2>\r\n" + "	<form action=\"index\">\r\n" + "		<h4>\r\n" + "			Media: "
+				+ media(req.queryParams("num")) + "		\r\n" + "		</h4>\r\n" + "		<h5>\r\n"
+				+ "			Desviacion: " + desviacion(req.queryParams("num")) + "		\r\n" + "		</h4>\r\n"
+				+ "		<button type=\"submit\" class=\"btn btn-dark\">Volver</button>\r\n" + "	  </div>\r\n"
+				+ "	\r\n" + "	</form>\r\n" + "    \r\n" + "  </div>\r\n"
 				+ "	<script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\r\n"
 				+ "    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>\r\n"
 				+ "    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>\r\n"
@@ -51,7 +51,8 @@ public class SparkWebApp {
 	}
 
 	/**
-	 * Este metodo Calcula la desviacion estandar a un conjunto de datos
+	 * + media(req.queryParams("num")) Este metodo Calcula la desviacion estandar a
+	 * un conjunto de datos
 	 * 
 	 * @param LinkedList<float> Son los datos con los que podra calculará la
 	 *                          desviación estandar
