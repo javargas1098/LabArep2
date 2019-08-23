@@ -40,7 +40,7 @@ public class SparkWebApp {
 				+ "\r\n" + "    <title>Caculadora</title>\r\n" + "  </head>\r\n"
 				+ "  <body style='background-color:#dc3545;'>\r\n" + " <div class=\"container\">\r\n"
 				+ "	<h2>Respuesta</h2>\r\n" + "	<form action=\"index\">\r\n" + "		<h4>\r\n" + "			Media: "
-				+ media(req.queryParams("num")) + "		\r\n" + "		</h4>\r\n" + "		<h5>\r\n"
+				+ media(req.queryParams("num")) + "		\r\n" + "		</h4>\r\n" + "		<h4>\r\n"
 				+ "			Desviacion: " + desviacion(req.queryParams("num")) + "		\r\n" + "		</h4>\r\n"
 				+ "		<button type=\"submit\" class=\"btn btn-dark\">Volver</button>\r\n" + "	  </div>\r\n"
 				+ "	\r\n" + "	</form>\r\n" + "    \r\n" + "  </div>\r\n"
